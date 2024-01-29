@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -10,10 +11,10 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #444;
   background-color: #f3f3f3;
-  min-height: 100vh;
+  height: 100vh;
   padding: 2rem;
 }
 
@@ -89,7 +90,6 @@ nav {
 
   /* NOTE This creates the fade in/out anumation */
   opacity: 0;
-  visibility: hidden;
   transition: all 1s;
 }
 
@@ -238,11 +238,9 @@ h2 {
 .form.form--loan {
   grid-template-columns: 2.5fr 1fr 2.5fr;
 }
-
 .form__label--loan {
   grid-row: 2;
 }
-
 /* End exceptions */
 
 .form__input {
@@ -291,56 +289,4 @@ h2 {
 
 .timer {
   font-weight: 600;
-}
-
-@media (max-width: 500px) {
-  html {
-    font-size: 55%;
-  }
-  nav {
-    flex-direction: column;
-  }
-
-  .app {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .balance {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .balance__value {
-    font-size: 3rem;
-  }
-
-  .movements__row {
-    padding: 1rem;
-  }
-
-  .summary {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .logout-timer {
-    text-align: center;
-  }
-}
-
-@media (max-width: 290px) {
-  .movements__row {
-    flex-direction: column;
-    justify-content: center;
-    padding: 1rem;
-  }
-
-  .movements__type {
-    margin: unset;
-  }
-
-  .movements__value {
-    margin: auto;
-  }
 }
